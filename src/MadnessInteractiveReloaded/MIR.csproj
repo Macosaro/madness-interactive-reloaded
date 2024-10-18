@@ -118,7 +118,7 @@
 	  <Resource Include="base\data\levels\incident\lvl_incident_end_6.json" />
 	</ItemGroup>
 	
-	<ItemGroup>
+	<ItemGroup Condition="'$(OS)'=='Windows_NT'">
 		<None Update="avcodec-59.dll">
 			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
 		</None>
