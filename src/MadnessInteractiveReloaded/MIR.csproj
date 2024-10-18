@@ -20,6 +20,9 @@
 		<Platforms>AnyCPU;x64</Platforms>
 	</PropertyGroup>
 	
+	<PropertyGroup Condition="'$(OS)'=='Unix'">
+		<RuntimeIdentifier>linux-x64</RuntimeIdentifier>
+	</PropertyGroup>
 	<PropertyGroup Condition="'$(Configuration)'=='Debug'">
 		<OutputType>Exe</OutputType>
 	</PropertyGroup>
